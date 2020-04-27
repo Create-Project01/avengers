@@ -6,6 +6,8 @@ public void Doctor{
 
     private String Phome;
 
+    private Integer age;
+
     public void setId(Integer id){
          this.id=id;
     }
@@ -32,8 +34,16 @@ public void Doctor{
          return this.Phone;
     }
 
+    public void setAge(Integer age){
+         this.Age=age;
+    }
+
+    public Integer getAge(){
+	 return this.Age;
+    }
+
     public String toString(){
-        return "Doctor [id="+this.id+",name="+this.name+",Phone="+this.Phone+"]";
+        return "Doctor [id="+this.id+",name="+this.name+",Phone="+this.Phone+",age="+this.age+"]";
     }
     
 }
